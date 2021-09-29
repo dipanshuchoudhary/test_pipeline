@@ -1,0 +1,74 @@
+/*my-app .main-panel .main-content .card{
+    animation-duration: 750ms;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}*/
+
+.tim-typo{
+  padding-left: 25%;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+.tim-typo .tim-note{
+  bottom: 5px;
+  color: #c0c1c2;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  left: 0;
+  margin-left: 20px;
+  position: absolute;
+  width: 260px;
+}
+
+
+.error_new{z-index:99999999;background:#F75151;color:#fff;padding:5px 10px;font-size:12px;font-family:Georgia;margin-top:3px;border:#f58181 1px solid;display:none;position:absolute; border-radius: 5px; text-shadow: 0 0 1px #1d1d1d;}
+.errorinline{ clear:both; background:#F75151;color:#fff;padding:5px 10px;font-size:12px;font-family:Georgia;margin-top:3px;border-bottom:#680000 2px solid;box-shadow: 0 3px 2px #fff; display:none;}
+.error_new:after{ content:''; width:0px;height:0px;border:solid 10px red;border-color:#AA1212 Transparent Transparent Transparent;position:absolute;top:32px;left:20px;}
+.e{/*empty*/}
+.m{/*mail*/}
+.web{/*web*/}
+.no{/*no*/}
+.loadingpr{ cursor: wait;}
+.cdk-overlay-container,.zindex{ z-index: 99999 !important;}
+.height500{ height: 500px !important;}
+.width700{ width: 700px !important;}
+.height800{height: 800px !important;}
+.height800{max-height: 800px !important;}
+
+.width700{ max-width:700px !important;}
+.referral span{ width:100%; display: block;}
+.referral span.highlight{ width:50%; font-weight: bold; color:gray;}
+
+.charthw{ overflow: hidden; max-height: 500px !important; height: 500px !important; min-width: 500px !important; width: 100% !important;}
+.owl-dateTime-dialog {
+  background-color: #fff !important;
+  border: 1px solid #000 !important;
+}
+
+.charthw2{ overflow: hidden; max-height: 400px !important; height: 400px !important; min-width: 500px !important; width: 100% !important;}
+.width50percent{ width:50% !important; max-width:50% !important;}
+.width80percent{ width:80% !important; max-width:80% !important;}
+.width100percent{ width:100% !important; max-width:100% !important;}
+.select2{ width:100% !important; max-width: 100% !important;}
+.ng-valid[required], .ng-valid.required  {
+/*  border-right: 5px solid #42A948; */ /* green */
+}
+
+.ng-invalid:not(form)  {
+ /* border-right: 5px solid #a94442; */ /* red */
+}
+.my-pagination /deep/ .ngx-pagination .current {
+
+  }
+  .ngx-pagination{
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px #aaa;
+    border-radius: 3px;
+  }
+  .ngx-pagination .current{ box-shadow: 0 0 4px #bbb; border: solid 1px white;}

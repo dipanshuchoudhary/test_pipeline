@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-version:
+      angular = 11.2.12
+    pre build:
+      commands:
+        - apt-get update
+        
+    build:
+      commands:
+        - ng build --prod --aot
+        # - php artisan serve
+    # post_build:
+    # dipnashu choudhary
+    #   commands:
+    #     - aws s3 cp ${BUILD_FOLDER} s3://${S3_BUCKET} --recursive --acl public-read --cache-control "max-age=${CACHE_CONTROL}"
+    #     - echo Build completed on `date`
+# artifacts:
+#   files:
+#     - target/messageUtil-1.0.jar
