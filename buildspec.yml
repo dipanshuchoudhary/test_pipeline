@@ -1,6 +1,5 @@
 # Visual Studio build
 # Build with MSBuild and set the Visual Studio version property
-- task: VSBuild@1
   inputs:
     solution: '*' 
     # vsVersion: 'latest' # Optional. Options: latest, 16.0, 15.0, 14.0, 12.0, 11.0
