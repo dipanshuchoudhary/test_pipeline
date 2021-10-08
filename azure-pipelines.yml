@@ -18,10 +18,3 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
-# Starter pipeline
-- task: DownloadBuildArtifacts@1
-  inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    artifactName: 'test'
-    downloadPath: '$(System.ArtifactsDirectory)'
