@@ -1,5 +1,5 @@
 # Visual Studio build
-# Build with MSBuild and set the Visual Studio version property dipanshu singh 
+# Build with MSBuild and set the Visual Studio version property 
 - task: VSBuild@1
   inputs:
     solution: '*' 
