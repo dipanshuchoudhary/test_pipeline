@@ -1,5 +1,5 @@
 # Visual Studio build
-# Build with MSBuild and set the Visual Studio version property deploy
+# Build with MSBuild and set the Visual Studio version property dipanshu deploy
 
 - task: VSBuild@1
   inputs:
