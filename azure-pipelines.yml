@@ -24,4 +24,4 @@ steps:
     ResourceGroupName: 'testing'
     ResourceType: 'Microsoft.Compute/virtualMachines'
     ResourceName: 'testing'
-    NotifyServiceOwners: true
+    # NotifyServiceOwners: true
