@@ -24,6 +24,6 @@ steps:
     ResourceGroupName: 'testing'
     ResourceType: 'Microsoft.Compute/virtualMachines'
     ResourceName: 'testing'
-    alertRules: 'click on […] button'
+    alertRules: 'devop rules'
 
     # NotifyServiceOwners: true
