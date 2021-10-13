@@ -17,13 +17,6 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-  
-- task: AzureMonitorAlerts@0
-  inputs:
-    azureSubscription: 'Microsoft Azure Sponsorship (b98080f1-548c-4362-b234-996cd8676971)'
-    ResourceGroupName: 'testing'
-    ResourceType: 'Microsoft.Compute/virtualMachines'
-    ResourceName: 'testing'
-    alertRules: 'devop rules'
+
 
     # NotifyServiceOwners: true
