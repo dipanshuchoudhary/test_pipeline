@@ -29,4 +29,11 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'new_artifact'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
 
