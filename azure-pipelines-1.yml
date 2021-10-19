@@ -35,8 +35,8 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     ArtifactName: 'drop'
-    publishLocation: 'Container'
-
+    publishLocation: 'FilePath'
+    TargetPath: /var/www/deepu.passivereferral.com/public_html
 
 
 
