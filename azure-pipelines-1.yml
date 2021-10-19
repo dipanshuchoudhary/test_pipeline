@@ -34,9 +34,10 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    # PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     ArtifactName: 'test'
     publishLocation: 'Container'
-    TargetPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    
 
 
