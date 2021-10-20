@@ -35,11 +35,8 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     # PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    PathtoPublish: 'home/azureuser/copy/$(Build.BuildId).zip'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     ArtifactName: 'test'
     publishLocation: 'FilePath'
     TargetPath: '/var/www/deepu.passivereferral.com/public_html'
     
-    
-
-
