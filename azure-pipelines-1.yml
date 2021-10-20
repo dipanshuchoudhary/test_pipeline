@@ -43,4 +43,6 @@ steps:
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'drop'
-    publishLocation: 'pipeline'
+    artifactType: 'filepath'
+    fileSharePath: '/var/www/deepu.passivereferral.com/public_html'
+    # publishLocation: 'pipeline'
