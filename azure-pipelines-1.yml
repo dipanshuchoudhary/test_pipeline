@@ -37,7 +37,9 @@ steps:
     # PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     ArtifactName: 'test'
-    publishLocation: 'Container'
+    publishLocation: 'filepath'
+    filepath: '/var/www/deepu.passivereferral.com/public_html'
+    
     
 
 
