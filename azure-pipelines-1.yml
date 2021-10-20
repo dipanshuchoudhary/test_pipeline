@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
@@ -43,6 +43,5 @@ steps:
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'drop'
-    artifactType: 'filepath'
+    publishLocation: 'pipeline'
     fileSharePath: '/var/www/deepu.passivereferral.com/public_html'
-    # publishLocation: 'pipeline'
