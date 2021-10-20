@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
 - task: NodeTool@0
@@ -37,7 +37,7 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'test'
     publishLocation: 'Container'
-    StoreAsTar: true
+    # StoreAsTar: true
 
 - task: PublishPipelineArtifact@1
   inputs:
