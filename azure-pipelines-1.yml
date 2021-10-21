@@ -36,14 +36,15 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'test'
-    publishLocation: 'Container'
+    publishLocation: 'FilePath'
+    TargetPath: '/home/azureuser/_test_pipeline'
     # StoreAsTar: true
 
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'drop'
-    artifactType: 'filepath'
+    artifactType: 'pipeline'
     fileSharePath: '/home/azureuser/_test_pipeline'
 # - task: DownloadPipelineArtifact@2
 #   inputs:
