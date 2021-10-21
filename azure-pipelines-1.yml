@@ -44,7 +44,7 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'drop'
     publishLocation: 'filepath'
-    fileSharePath: '/var/www/deepu.passivereferral.com/public_html'
+    fileSharePath: '/home/azureuser/_test_pipeline'
 # - task: DownloadPipelineArtifact@2
 #   inputs:
 #     buildType: 'current'
