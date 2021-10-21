@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: Windows-latest
+  vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
@@ -44,8 +44,7 @@ steps:
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'drop'
-    publishLocation: 'filepath'
-    fileSharePath: '/home/azureuser/_test_pipeline'
+    publishLocation: 'pipeline'
 # - task: DownloadPipelineArtifact@2
 #   inputs:
 #     buildType: 'current'
