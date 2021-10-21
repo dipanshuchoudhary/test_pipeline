@@ -32,21 +32,10 @@ steps:
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'test'
-    publishLocation: 'FilePath'
-    TargetPath: '/home/azureuser/_test_pipeline'
-    # StoreAsTar: true
+
 
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'drop'
     publishLocation: 'pipeline'
-# - task: DownloadPipelineArtifact@2
-#   inputs:
-#     buildType: 'current'
-#     artifactName: 'pipeline'
-#     targetPath: '$(Pipeline.Workspace)'
