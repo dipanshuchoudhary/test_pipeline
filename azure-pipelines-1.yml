@@ -44,7 +44,7 @@ steps:
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'drop'
-    artifactType: 'pipeline'
+    publishLocation: 'filepath'
     fileSharePath: '/home/azureuser/_test_pipeline'
 # - task: DownloadPipelineArtifact@2
 #   inputs:
